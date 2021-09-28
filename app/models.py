@@ -1,5 +1,4 @@
 from .import db
-from sqalchemy.sql import func
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin, current_user
 from datetime import datetime
@@ -10,10 +9,11 @@ def load_user(user_id):
     return User.query.get(int(user_id))
 
 class User(UserMixin,db.Model):
-    __table__name = 'users'
+
+    __tablename__ = 'users'
 
     id = db.Column(db.Integer, primary_key = True)
-    username = db.column(db.str)
+    username = db.column(db.String())
     email = db.Column(db.String(255),unique = True,index = True)
     bio = db.Column(db.String(255))
     profile_pic_path = db.Column(db.String())
