@@ -1,0 +1,41 @@
+
+<div style="background-color: background: #4B79A1;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;">
+{% extends 'bootstrap/base.html'%}
+
+{% block navbar %}
+{% include 'navbar.html' %}
+{% endblock %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if title %}
+    <title>{{title}}</title>
+    {% else %}
+    <title>BLOG BING</title>
+    {% endif %}
+    {% block styles %} 
+  {{ super() }}
+  
+  {% endblock %}
+</head>
+<body style="background-color: background: #4B79A1;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;">
+  <div class="container-fluid">
+      {% block content %}
+
+      {% endblock%}
+    
+  </div>
+</body>
+
+</html>
+</div>
