@@ -7,6 +7,7 @@ VICTOR KILONZI
 A flask application that provides different BLOGS sources in just one single site.
 
 # Live-Link
+ https://personl-blog.herokuapp.com/
  #
 # Installation Setup
 . Open your Terminal
