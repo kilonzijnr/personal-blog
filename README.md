@@ -38,6 +38,6 @@ python3.8 manage.py (file to test)
 victor.kilonzi@students.moringaschool.com
 
 # License
-MIT License:[]
+MIT License:[https://github.com/kilonzijnr/personal-blog/blob/master/license]
 
 # Copyright (c) 2021 Victor Kilonzi
