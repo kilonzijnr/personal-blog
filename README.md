@@ -27,7 +27,10 @@ A flask application that provides different BLOGS sources in just one single sit
 
 # Application Testing
 python3.8 manage.py (file to test)
-
+#
+# Known Bugs
+.I am facing a signup rror that i have notfound a solution to.
+#
 # Technologies used
 .python
 .Flask
